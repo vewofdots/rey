@@ -1,0 +1,28 @@
+#keliling lingkaran
+import math
+
+
+r = int(input())
+def keliling_lingkaran(kl):
+    return math.pi * 2 * r
+print (keliling_lingkaran(r))
+
+#volume tabung
+
+def volumetabung(r, t):
+    return math.pi* pow (r,2) * t
+print (volumetabung (2,3))
+
+#menghitung fungsi
+def f(x):
+    return pow(x,4) - pow (x,2) + (10*x) +5
+print (f(2))
+
+#menghitung jarak dua titik
+x1 = int(input())
+x2 = int(input())
+y1 = int(input())
+y2 = int(input())
+
+d = math.sqrt(pow ((x2-x1),2) + pow (y2-y1), 2)
+print (d)
