@@ -1,0 +1,13 @@
+x = input()
+y = input()
+z = input()
+
+for i in range (len(x)):
+    if z[i] == "0":
+        print(x[i], end="")
+    elif z[i] == "1":
+        print (y[i], end="")
+        
+print()
+    
+
