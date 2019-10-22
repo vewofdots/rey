@@ -1,0 +1,4 @@
+x = [int(x) for x in input().split()]
+
+z = sum(x)
+print (z)
