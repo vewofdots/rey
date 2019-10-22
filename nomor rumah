@@ -1,0 +1,9 @@
+x = input()
+n = len (x)
+
+L = [0] * 10
+for i in range (n):
+    t=int(x[i])
+    L[t] += 1
+hasil = max (L)
+print (hasil)
