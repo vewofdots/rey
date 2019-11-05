@@ -1,0 +1,11 @@
+def bintang(n):
+    if (n==1):
+        print("*")
+    else:
+        bintang(n-1)
+        for i in range(n):
+            print("*", end="")
+        print()
+        
+    
+bintang(3)
