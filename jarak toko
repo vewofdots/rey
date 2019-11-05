@@ -1,0 +1,8 @@
+x= input().split()
+y= input().split()
+
+w = int(max(y))
+z = int(min(y))
+
+total = ((w-z)*2)
+print(total)
