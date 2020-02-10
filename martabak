@@ -1,0 +1,16 @@
+h = int(input())
+d = int(input())
+
+dis = (100 - d) / 100
+
+
+
+belum= dis * h
+sisa= belum%1000
+if sisa > 0:
+    belum = belum - sisa +1000
+    y = int(belum)
+    print(y)
+else:
+    y = int(belum)
+    print (y)
