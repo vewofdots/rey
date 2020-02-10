@@ -1,0 +1,5 @@
+n = int(input())
+
+a = format(n, 'b')
+
+print(a)
