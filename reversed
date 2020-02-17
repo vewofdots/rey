@@ -1,0 +1,11 @@
+colors = ['red', 'green', 'blue', 'yellow']
+for i in reversed (range (len(colors))):
+    print(colors[i])
+for color in reversed (sorted (colors)):
+    print (color)
+    
+    
+for i in range (5-1,-1,-1):
+    print(i)
+for i in range (5):
+    print(i)
