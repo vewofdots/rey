@@ -1,0 +1,18 @@
+data = {"Nama" : "Adi",
+		 "Umur" : 20,
+		 "MK" : {"Matematika Diskrit" : ['A', 2],
+				 "Pemrograman" : ['B', 3],
+				 "Struktur Data" : ['B', 2],
+				 }
+		}
+
+matakuliah = []
+for mk in data["MK"].keys():
+    matakuliah.append(mk)
+    
+ipk = (data["MK"]["Matematika Diskrit"][1]*4+data["MK"]["Pemrograman"][1]*3+data["MK"]["Struktur Data"][1]*3) \
+ / (data["MK"]["Matematika Diskrit"][1]+data["MK"]["Pemrograman"][1]+data["MK"]["Struktur Data"][1])
+
+print(",".join(matakuliah))
+print(data["MK"])
+print(ipk)
