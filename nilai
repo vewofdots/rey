@@ -1,0 +1,20 @@
+penilaian = {"materi 1" : 80,
+             "materi 2" : 87,
+             "materi 3" : [66, 75, 65],
+             "materi 4" : {"diskusi" : 90,
+                           "kuis":70
+                          }
+             }
+             
+import statistics
+def nilai(penilaian):
+    nilai1= 0.2*penilaian["materi 1"]
+    nilai2= 0.2*penilaian["materi 2"]
+    nilai3= 0.3*statistics.mean(penilaian["materi 3"])
+    nilai4= 0.3*(penilaian["materi 4"]["diskusi"]+penilaian["materi 4"]["kuis"])/len(penilaian["materi 4"])
+
+    return nilai1 + nilai2 + nilai3 + nilai4
+
+print("nilai", nilai(penilaian))
+
+            
